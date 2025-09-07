@@ -1,26 +1,26 @@
-const score = 100; // Number
+const score = 100; //| Number
 // console.log(typeof score);
-const scale = 32.5; // Number
+const scale = 32.5; //| Number
 // console.log(typeof scale);
-const isLoggedIn = false; // Boolean
+const isLoggedIn = false; //| Boolean
 // console.log(typeof isLoggedIn);
-const outSideTemp = null; // Object
+const outSideTemp = null; //| Object
 // console.log(typeof outSideTemp);
-let userName = undefined; // Undefined
+let userName = undefined; //| Undefined
 // console.log(typeof userName);
-let userEmail;// undefined
+let userEmail; //| undefined
 // console.log(typeof userEmail);
 /* Symbol */
-const id = Symbol("123"); // Symbol
+const id = Symbol("123"); //| Symbol
 // console.log(typeof id);
-const anId = Symbol("123"); // Symbol
+const anId = Symbol("123"); //| Symbol
 // console.log(typeof anId);
 // console.log(id === anId);
-const bigNumber = 123456789123456789123456789n; // bigint
+const bigNumber = 123456789123456789123456789n; //| bigint
 // console.log(typeof bigNumber);
 // console.log(bigNumber);
-/* Reference */
-// Array,Objects,Functions
+//.  Reference 
+//| Array,Objects,Functions
 /* Array */
 const heros = ["Tony", "Cap", "Thor", "Hulk", "Hokai", "Natasha"];
 /* Objects */

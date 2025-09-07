@@ -1,6 +1,6 @@
-let score = "33e";
+let _score = "33e";
 // console.log(typeof score);
-let num = Number(score);
+let num = Number(_score);
 // console.log(typeof num);
 let x = "";
 let y = Boolean(x);
@@ -13,7 +13,7 @@ let value = 5;
 let neg = -value;
 
 // console.log(neg);
-function arith () {
+function arith() {
   console.log(2 + 2); // 4
   console.log(4 - 1); // 3
   console.log(2 * 3); // 6
@@ -27,7 +27,7 @@ function arith () {
 // let str2 = " Rahul";
 // console.log(str1 + str2);
 // console.log((3 + 4) * 5 % 3);
-function concatenate () {
+function concatenate() {
   console.log("1" + 2); // 12
   console.log(1 + "2"); // 12
   console.log("1" + 2 + 2); // 122
@@ -35,8 +35,8 @@ function concatenate () {
 }
 
 // concatenate();
-console.log(+true);// 1
-console.log(+"");// 0
+console.log(+true); // 1
+console.log(+""); // 0
 let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2;
 // console.log(num3);
