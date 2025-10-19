@@ -7,7 +7,7 @@ function addTwoNumbers(a, b) {
 function loginUserMsg(username = "user_default") {
   if (!username) {
     console.log(`the value is undefined`);
-    return;
+    return !!0;
   }
   return `${username} just logged in`;
 }
@@ -33,6 +33,6 @@ handleObject(obj);
 
 let ary = [200, 300, 500, 700];
 function returnSecondValue(array = []) {
-  return array[2]
+  return array[1];
 }
 console.log(returnSecondValue(ary));

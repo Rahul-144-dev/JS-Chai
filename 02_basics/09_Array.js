@@ -28,13 +28,13 @@ slice_splice();
 function slice(myArr = []) {
   console.log("a", myArr);
   let spArr = myArr.slice(1, 3);
-  console.log('new',spArr);
+  console.log("new", spArr);
   console.log("b", myArr);
 }
 // @ts-ignore
 function splice(myArr = []) {
   console.log("a", myArr);
   let spArr = myArr.splice(1, 3);
-  console.log('new',spArr);
+  console.log("new", spArr);
   console.log("b", myArr);
 }

@@ -22,7 +22,7 @@ let dc_heros = ["superman", "flash", "batman"];
 //| from
 // console.log(Array.from("hello")); // Converts anything into Array - if possible
 // console.log(Array.from({ name: "rahul" })); // error - can't convert
-
+//| of
 // let s1 = 100;
 // let s2 = 200;
 // let s3 = 300;
