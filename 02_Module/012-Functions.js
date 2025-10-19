@@ -1,3 +1,4 @@
+//@ts-nocheck
 function addTwoNumbers(a, b) {
   console.log(a + b);
 }
@@ -21,17 +22,17 @@ function calculateCartPrice(...num) {
 
 let obj = {
   username: "Rahul",
-  price: 199,
+  a1ge: 19,
 };
 function handleObject(any_object) {
   console.log(
-    `username is ${any_object.username} and price is ${any_object.price}`
+    `username is ${any_object?.username} and age is ${any_object?.age}`
   );
 }
 handleObject(obj);
 
 let ary = [200, 300, 500, 700];
-function returnSecondValue(array) {
-  return array[2];
+function returnSecondValue(array = []) {
+  return array[2]
 }
 console.log(returnSecondValue(ary));
