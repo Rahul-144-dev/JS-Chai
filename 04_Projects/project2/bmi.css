@@ -1,0 +1,137 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page setup */
+body {
+  background: #eef1f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* Page heading */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+/* Form box */
+form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+/* Input fields */
+.input-field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #0078ff;
+  outline: none;
+}
+
+/* Result display */
+.result {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f4f7fb;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: #0078ff;
+  min-height: 30px;
+  /* keeps space even before result appears */
+}
+
+/* Button */
+button {
+  width: 100%;
+  background: #0078ff;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+/* BMI Guide Section */
+.guide {
+  background: #fff;
+  margin-top: 25px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.guide h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #222;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+li {
+  background: #f8f9fb;
+  margin-bottom: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border-left: 4px solid #0078ff;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+
+  form,
+  .guide {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

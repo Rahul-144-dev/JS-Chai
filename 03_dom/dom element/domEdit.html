@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chai aur Code | DOM</title>
+  <!-- <link rel="stylesheet" href="fileName.css" /> -->
+  <style>
+    body {
+      background-color: black;
+      color: whitesmoke;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="language">
+    <li>Go</li>
+  </ul>
+
+
+  <script>
+    const addListItem = (val) => {
+      let li = document.createElement('li');
+      li.innerText = val;
+      document.querySelector('.language').appendChild(li);
+    };
+
+    const addListOptimized = (val) => {
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(val));
+      document.querySelector('.language').appendChild(li);
+    };
+
+    const langArr = ['JavaScript', 'TypeScripr', 'Python', 'Java', 'Ruby', 'C++'];
+    langArr.forEach((val) => addListItem(val));
+    addListOptimized('Rust');
+
+    // child-selection
+    const secondLang = document.querySelector('li:nth-child(2)');
+    //| it's unOptimized
+    // secondLang.textContent = 'kala kala kala'
+    // edit
+    const newLi = document.createElement('li');
+    newLi.appendChild(document.createTextNode('kala da ole whaa'));
+    secondLang.replaceWith(newLi);
+    // edit
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = '<li>firstLang</li>';
+
+    // remove
+    const lastChild = document.querySelector('li:last-child');
+    lastChild.remove()
+  </script>
+</body>
+
+</html>

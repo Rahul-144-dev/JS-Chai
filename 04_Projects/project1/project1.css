@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #86528738;
+}
+
+.container {
+  height: 30%;
+  width: 20%;
+  border: 2px solid rgb(7, 210, 139);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.btn {
+  height: 80%;
+  width: 80%;
+  margin: 5%;
+  border: 2px solid #b07106d1;
+  font-size: 1.7rem;
+}
+
+.container,
+.btn {
+  border-radius: 20px;
+}

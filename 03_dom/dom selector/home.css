@@ -1,0 +1,21 @@
+/* Auto-generated CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: rgb(38, 38, 38);
+  color: whitesmoke;
+}
+
+.bg-black {
+  /* height: 50vh; */
+  /* width: 50vw; */
+  border: 2px solid whitesmoke;
+  padding: 40px;
+}
